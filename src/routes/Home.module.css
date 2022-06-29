@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    margin-bottom: -100px;
+}
+.loader {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 500px;
+
+}   
+
+.movie__container {
+    width:1050px;
+    overflow: hidden;
+    position: relative;
+    left: calc(50% - 525px);
+}
+
+
+.movie__container h1 {
+    color: #66FCF1;
+    text-align: center;
+    position: relative;
+    bottom: -200px;
+    font-size: 50px;
+}
+
+.movie__box {
+    margin-top: 240px;
+    padding: 50px 0 0 0;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.left,
+.right {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #66FCF1;
+  opacity: 0.8;
+  font-size: 44px;
+
+  transition: all 0.4s;
+}
+
+.left:hover,
+.right:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.left {
+  text-shadow: 3px 2px 0 #009efa;
+
+  position: absolute;
+  bottom: 123px;
+  left: 700px;
+}
+
+.right {
+  text-shadow: -3px 2px 0 #009efa;
+  position: absolute;
+  bottom: 123px;
+  right: 700px;
+}
