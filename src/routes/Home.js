@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Movie from "../components/Movie";
 import styles from "./Home.module.css";
+import {Link} from "react-router-dom";
 
 function Home() {
     const [loading, setLoading] = useState(true);
@@ -100,13 +101,14 @@ function Home() {
         console.log(movies);
     }, []); 
   return (
-  <div>
+  <div className={styles.main}>
 
     <div className={styles.container}>
       {loading ? (<h1 className={styles.loader}>Loading...</h1>) :
         (
           <div className={styles.movie__container}>
-            <h1>Top Rating</h1>
+            
+            <Link className={styles.link} to={`/movie/TopRating`}><h1>Top Rating</h1></Link>
             <div className={styles.movie__box} style={{
               transform: `translateX(${trans4}px)`
             }}>{movies4 && movies4.map((movie) => (<Movie key={movie.id} id={movie.id} coverImg={movie.medium_cover_image} title={movie.title} year={movie.year} genres={movie.genres} />))}</div>
@@ -127,7 +129,7 @@ function Home() {
       {loading ? (null) :
         (
           <div className={styles.movie__container}>
-            <h1>Animation Movies</h1>
+            <Link className={styles.link} to={`/movie/Animation`}><h1>Animation Movies</h1></Link>
             <div className={styles.movie__box} style={{
               transform: `translateX(${trans}px)`
             }}>{movies && movies.map((movie) => (<Movie key={movie.id} id={movie.id} coverImg={movie.medium_cover_image} title={movie.title} year={movie.year} genres={movie.genres} />))}</div>
@@ -147,7 +149,7 @@ function Home() {
     {loading ? null:
       (
         <div className={styles.movie__container}>
-          <h1>Action Movies</h1>
+          <Link className={styles.link} to={`/movie/Action`}><h1>Action Movies</h1></Link>
           <div className={styles.movie__box} style={{
             transform: `translateX(${trans2}px)`
           }}>{movies2 && movies2.map((movie) => (<Movie key={movie.id} id={movie.id} coverImg={movie.medium_cover_image} title={movie.title} year={movie.year} genres={movie.genres} />))}</div>
@@ -169,7 +171,7 @@ function Home() {
     {loading ? null:
       (
         <div className={styles.movie__container}>
-          <h1>Romance Movies</h1>
+          <Link className={styles.link} to={`/movie/Romance`}><h1>Romance Movies</h1></Link>
           <div className={styles.movie__box} style={{
             transform: `translateX(${trans3}px)`
           }}>{movies3 && movies3.map((movie) => (<Movie key={movie.id} id={movie.id} coverImg={movie.medium_cover_image} title={movie.title} year={movie.year} genres={movie.genres} />))}</div>

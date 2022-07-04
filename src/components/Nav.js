@@ -46,10 +46,10 @@ function Nav() {
           </Link>
         </div>
         <div className={nav.column}>
-          <span>Top Rating</span>
-          <span>Animation</span>
-          <span>Action</span> 
-          <span>Romance</span>
+          <span><Link className={nav.genre} to={`/movie/TopRating`}>Top Rating</Link></span>
+          <span><Link className={nav.genre} to={`/movie/Animation`}>Animation</Link></span>
+          <span><Link className={nav.genre} to={`/movie/Action`}>Action</Link></span> 
+          <span><Link className={nav.genre} to={`/movie/Romance`}>Romance</Link></span>
         </div>
         <div className={nav.column}>
           <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>

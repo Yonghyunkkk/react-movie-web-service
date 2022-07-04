@@ -1,0 +1,75 @@
+.container {
+    background-color: white;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 900px;
+    font-weight: 300;
+    color: #4b4453;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+.title{
+    color: black;   
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 5px;
+    transition: all;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.container img {
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+    position: relative;
+    top: -30px;
+    left: 30px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.container p {
+    font-weight: 500;
+    margin-top: -20px;
+}
+
+.box {
+    padding-right: 50px;
+}
+
+.box ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -40px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.container li {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 100%;
+      padding: 20px;
+    }
+  }

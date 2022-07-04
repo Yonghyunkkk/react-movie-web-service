@@ -1,3 +1,6 @@
+.main {
+}
+
 .container {
     position: relative;
     margin-bottom: -100px;
@@ -64,4 +67,13 @@
   position: absolute;
   bottom: 123px;
   right: 700px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color:#66FCF1;
 }
