@@ -10,7 +10,6 @@ import Romance from "./routes/Romance";
 function App() {
   return(
   <Router>
-    <Nav />
     <Routes>
       <Route path="/movie/:id" element={<Detail />} />
       <Route path="/" element={<Home />} />
@@ -19,6 +18,7 @@ function App() {
       <Route path="/movie/Action" element={<Action />} />
       <Route path="/movie/Romance" element={<Romance />} />
     </Routes>
+    <Nav />
   </Router>);
 }
 
