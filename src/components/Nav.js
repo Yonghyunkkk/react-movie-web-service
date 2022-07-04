@@ -1,11 +1,44 @@
 import nav from "./Nav.module.css";
 import {Link} from "react-router-dom";
+import { useState } from "react";
 
 function Nav() {
+    let last_known_scroll_position = 0;
+    const [changing, setChanging] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
+
+    const doSomething = (scroll_pos) => {
+        if (scroll_pos >= 10) {
+            setChanging(true);
+            setScrolling(true);
+        } else {
+            setChanging(false);
+            setScrolling(false);
+        }
+    }
+
+    window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+  
+    window.requestAnimationFrame(function() {
+    doSomething(last_known_scroll_position)
+    });
+
+    });
+
+    const onMouseOverOut = () => {
+        if (scrolling)
+            return;      
+        setChanging(current => !current);
+    }
+
     return (
-      <div className={nav.box}>
+      <div className={nav.box} onMouseOver={onMouseOverOut} onMouseOut={onMouseOverOut} style={changing ? 
+        {backgroundColor : "#0B0C10",
+        boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"}
+         : {backgroundColor : "transparent"}}>
         <div className={nav.column}>
-        <Link className={nav.home} to={`/`}>
+          <Link className={nav.home} to={`/`}>
           <span>
             <i class="fa-brands fa-magento"></i>
           </span>

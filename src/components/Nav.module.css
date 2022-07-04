@@ -22,6 +22,28 @@
     color:#66FCF1;
 }
 
+.home::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #66FCF1;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 200ms;
+}
+
+.home:hover::before {
+    width: 100%;
+}
+
+.column:first-child {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .column:first-child span{
     margin: 0px 4px;
     font-size: 30px;
@@ -37,10 +59,4 @@
     margin: 0 7px;
     font-size: 25px;
     color: #66FCF1;
-}
-
-@media screen and (max-height: 799px) {
-    .box {
-        background-color: #9370db;
-    }
 }
