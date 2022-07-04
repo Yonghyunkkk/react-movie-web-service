@@ -77,3 +77,20 @@
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
+
+@media screen and (max-width: 2300px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        padding: 50px;
+        width: 100%;
+    }
+    .box__info_title {
+        font-size: 50px;
+        margin-top: 1px;
+    }
+    .poster {
+        margin-left: 150px;
+    }
+  }

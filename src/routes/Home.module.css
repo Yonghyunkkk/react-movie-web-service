@@ -58,15 +58,15 @@
   text-shadow: 3px 2px 0 #009efa;
 
   position: absolute;
-  bottom: 123px;
-  left: 700px;
+  top: calc(75% - 22px);
+  left: 80px;
 }
 
 .right {
   text-shadow: -3px 2px 0 #009efa;
   position: absolute;
-  bottom: 123px;
-  right: 700px;
+  top: calc(75% - 22px);
+  right: 80px;
 }
 
 .link {
