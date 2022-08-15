@@ -43,16 +43,9 @@
 }
 
 .genre:hover {
-    opacity: 0.8;
+    opacity: 1 !important;
 }
 
-.genre:focus {
-    opacity: 0.8;
-}
-
-.genre:focus::before {
-    width: 100%;
-}
 
 .genre::before {
     content: '';
