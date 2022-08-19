@@ -5,7 +5,7 @@ This website uses the Movie API from the YTS website.
 
 <br>
 
-![Hotels](https://user-images.githubusercontent.com/91252737/185581373-21c8502e-0eb5-4d46-9ba4-c81d3d3e3cd9.png)
+![ReactMovie](https://user-images.githubusercontent.com/91252737/185608815-bfc19836-d4eb-4965-a498-9200f16cef18.png)
 
 <p align='center'>
     <a href="#">Demo</a>
