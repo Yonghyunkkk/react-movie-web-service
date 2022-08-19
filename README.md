@@ -8,7 +8,7 @@ This website uses the Movie API from the YTS website.
 ![ReactMovie2](https://user-images.githubusercontent.com/91252737/185609163-f5aacb55-eb88-417c-97d6-e403a0ec1836.png)
 
 <p align='center'>
-    <a href="#">Demo</a>
+    <a href="https://yonghyunkkk.github.io/react-movie-web-service/">Demo</a>
 </p>
 
 <br>
@@ -23,3 +23,8 @@ This website uses the Movie API from the YTS website.
 </p>
 
 <br>
+
+## 🔖 Learnt
+>+ ReactJS Hooks (State and Effect)
+>+ Asynchronous API fetch (async and await)
+>+ Props, JSX, Slider, etc.
