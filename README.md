@@ -1,5 +1,5 @@
 # React Movie Web Service
-The purpose of this project is to get used to ReactJS and API fectch. 
+The purpose of this project is to get used to ReactJS and API fetch. 
 
 This website uses the Movie API from the YTS website. 
 
