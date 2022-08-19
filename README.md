@@ -5,7 +5,7 @@ This website uses the Movie API from the YTS website.
 
 <br>
 
-![ReactMovie](https://user-images.githubusercontent.com/91252737/185608815-bfc19836-d4eb-4965-a498-9200f16cef18.png)
+![ReactMovie2](https://user-images.githubusercontent.com/91252737/185609163-f5aacb55-eb88-417c-97d6-e403a0ec1836.png)
 
 <p align='center'>
     <a href="#">Demo</a>
